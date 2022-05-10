@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Practice9" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+
+        <item name="colorPrimary">@color/light_yellow</item>
+        <item name="colorPrimaryVariant">@color/dark_yellow</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/light_purple</item>
+        <item name="colorSecondaryVariant">@color/dark_purple</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+    <style name="PhoneNumber" parent="Theme.Practice9">
+        <item name="fontFamily">@font/red_rose</item>
+        <item name="android:textColor">#2E2D2D</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="PriceNumber" parent="Theme.Practice9">
+        <item name="fontFamily">@font/red_rose</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark_brown</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="PriceCurrency" parent="PriceNumber">
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+    <style name="TitleText" parent="Theme.Practice9">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/softer_black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="TitleDescription" parent="Theme.Practice9">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/dark_brown</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="BookTitle" parent="Theme.Practice9">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/softer_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="SubTitle" parent="Theme.Practice9">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/softer_black</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- Я попробовал выставить разные цвета для включенного и выключенного состояния,
+    но они странно работали (через раз), поэтому сделал один цвет через thumbTint -->
+    <style name="Switch" parent="Theme.Practice9">
+        <!-- Чтобы посмотреть, как было, можно раскомментить это и закомментить thumbTint -->
+        <!--
+        <item name="colorControlActivated">@color/light_purple</item>
+        <item name="colorSwitchThumbNormal">@color/dark_purple</item>
+        -->
+        <item name="thumbTint">@color/light_purple</item>
+        <item name="trackTint">@color/pink_gray</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextField" parent="Theme.Practice9">
+        <item name="android:textColorHint">@color/lighter_brown</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:paddingLeft">34dp</item>
+    </style>
+    <style name="Radio" parent="Theme.Practice9">
+        <item name="android:buttonTint">@color/duller_purple</item>
+    </style>
+    <style name="Button" parent="Theme.Practice9">
+        <item name="android:letterSpacing">0</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+</resources>
