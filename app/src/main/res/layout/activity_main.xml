@@ -299,7 +299,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/hamburger"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -308,6 +308,8 @@
         android:contentDescription="@string/menu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_vector" />
+        android:src="@drawable/ic_vector"
+        android:padding="0dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
